@@ -7,14 +7,14 @@
  */
 
 (function(factory) {
-    'use strict';
-    if (typeof define === 'function' && define.amd) {
-        define(['jquery'], factory);
-    } else {
-        factory(jQuery);
-    }
+  'use strict';
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory);
+  } else {
+    factory(jQuery);
+  }
 }(function($) {
-    'use strict';
+  'use strict';
 
   // enhance all ajax requests with our retry API
   $.ajaxPrefilter(function(options, originalOptions, jqXHR){
